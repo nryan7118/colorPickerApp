@@ -89,7 +89,6 @@
 				48F52C862B97E4CB006E9939 /* color */,
 				48F52C5C2B97DEA1006E9939 /* Color_PickerApp.swift */,
 				48F52C5E2B97DEA1006E9939 /* ContentView.swift */,
-				48F52C602B97DEA3006E9939 /* Assets.xcassets */,
 				48F52C622B97DEA3006E9939 /* Preview Content */,
 			);
 			path = "Color Picker";
@@ -98,6 +97,7 @@
 		48F52C622B97DEA3006E9939 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				48F52C602B97DEA3006E9939 /* Assets.xcassets */,
 				48F52C632B97DEA3006E9939 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
