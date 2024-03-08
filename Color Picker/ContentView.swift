@@ -22,18 +22,27 @@ struct ContentView: View {
           RoundedRectangle(cornerRadius: 0)
             .fill(boxColor)
           
+           
+            
+          
           Text("Red")
             .font(.title3)
-          Slider( value: self.$redSliderValue, in: 0.0...255.00)
-          
+          HStack{
+            Slider( value: self.$redSliderValue, in: 0.0...255.00)
+            Text(String(Int(redSliderValue.rounded())))
+          }
           Text("Green")
             .font(.title3)
-          Slider( value: self.$greenSliderValue, in: 0.0...255.00)
-          
+          HStack{
+            Slider( value: self.$greenSliderValue, in: 0.0...255.00)
+            Text(String(Int(greenSliderValue.rounded())))
+          }
           Text("Blue")
             .font(.title3)
-          Slider( value: self.$blueSliderValue, in: 00.0...255.00)
-          
+          HStack{
+            Slider(value: self.$blueSliderValue, in: 00.0...255.00)
+            Text(String(Int(blueSliderValue.rounded())))
+          }
           Button("Set Color") {
              boxColor = Color(red: redSliderValue/255, green: greenSliderValue/255, blue: blueSliderValue/255)
           }
