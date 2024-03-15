@@ -7,28 +7,22 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AnimationView: View {
   @State private var redSliderValue: Double = 250.0
   @State private var greenSliderValue: Double = 100.0
   @State private var blueSliderValue: Double = 50.0
   @State private var boxColor = Color (red: 0.0, green: 0.0, blue: 0.0)
   
-  @Environment(\.verticalSizeClass) var verticalSizeClass
-  @Environment(\.horizontalSizeClass) var horizontalSizeClass
-  
   
   var body: some View {
- //   if horizontalSizeClass == .regular && verticalSizeClass == .compact {
-      
-   //   AnimationView()
-      
-   // } else {
+    HStack {
       VStack {
         TitleText(text: "Color Picker")
         RoundedRectangle(cornerRadius: 0)
           .fill(boxColor)
           .strokeBorder(Color.white.opacity(0.1), lineWidth: 15)
-        
+      }
+      VStack {
         SliderView(sliderValue: $redSliderValue, sliderTint: (Binding.constant(Color("RedSliderColor"))), sliderLabel: "Red")
         SliderView(sliderValue: $greenSliderValue, sliderTint: (Binding.constant(Color("GreenSliderColor"))), sliderLabel: "Green")
         SliderView(sliderValue: $blueSliderValue, sliderTint: (Binding.constant(Color("BlueSliderColor"))), sliderLabel: "Blue")
@@ -48,18 +42,17 @@ struct ContentView: View {
             .stroke(Color.white, lineWidth: 2)
         )
       }
-      
       .padding()
     }
+    }
   }
-//}
-
-
-  struct ContentView_Previews:
-                                
+  
+  
+  struct AnimationView_Previews: 
+    
     PreviewProvider {
     
-      static var previews: some View {
-    ContentView()
+    static var previews: some View {
+          AnimationView()
       }
   }
