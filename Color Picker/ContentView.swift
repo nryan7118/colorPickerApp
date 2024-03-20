@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var redSliderValue: Double = 250.0
-  @State private var greenSliderValue: Double = 100.0
-  @State private var blueSliderValue: Double = 50.0
-  @State private var boxColor = Color (red: 0.0, green: 0.0, blue: 0.0)
+  @State private var redSliderValue: Double = Constants.InitialColorValues.red
+  @State private var greenSliderValue: Double = Constants.InitialColorValues.green
+  @State private var blueSliderValue: Double = Constants.InitialColorValues.blue
+  @State private var boxColor = Color (red: Constants.InitialColorValues.red, green: Constants.InitialColorValues.green, blue: Constants.InitialColorValues.blue)
   
   @Environment(\.verticalSizeClass) var verticalSizeClass
   @Environment(\.horizontalSizeClass) var horizontalSizeClass
   
   
   var body: some View {
- //   if horizontalSizeClass == .regular && verticalSizeClass == .compact {
-      
-   //   AnimationView()
-      
-   // } else {
+ 
       VStack {
         TitleText(text: "Color Picker")
         RoundedRectangle(cornerRadius: 0)
@@ -52,7 +48,7 @@ struct ContentView: View {
       .padding()
     }
   }
-//}
+
 
 
   struct ContentView_Previews:
