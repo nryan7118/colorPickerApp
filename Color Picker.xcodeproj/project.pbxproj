@@ -31,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4858D9F02BADEE4000BB2F14 /* nicksPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = nicksPlayground.playground; path = ../../Downloads/nicksPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		48F52C592B97DEA1006E9939 /* Color Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52C5C2B97DEA1006E9939 /* Color_PickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_PickerApp.swift; sourceTree = "<group>"; };
 		48F52C5E2B97DEA1006E9939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,7 +68,6 @@
 		48F52C502B97DEA1006E9939 = {
 			isa = PBXGroup;
 			children = (
-				4858D9F02BADEE4000BB2F14 /* nicksPlayground.playground */,
 				48F52C5B2B97DEA1006E9939 /* Color Picker */,
 				48F52C5A2B97DEA1006E9939 /* Products */,
 			);
